@@ -1,57 +1,106 @@
 html {
     margin: 0.5rem;
-}
-
-.container {
-    position: relative; 
+  }
+  
+  .container {
+    position: relative;
     display: flex;
     flex-direction: column;
-}
-
-.text-container {
+  }
+  
+  .text-container {
     font-family: "Arial Narrow", Arial, sans-serif;
     font-size: 2rem;
     width: calc(100vw / 3);
-}
-
-.random-image {
-    position: fixed; 
-    top: 1rem;  
+  }
+  
+  .random-image {
+    position: fixed;
+    top: 1rem;
     right: 1rem;
-    width: calc(100vw / 3);  
-}
-
-.random-image img {
-    width: 100%;  
-    height: auto;  
-}
-
-.arrow-container {
-    font-size: 3rem;  
-    position: fixed; 
-    bottom: 1rem; 
-    right: 1rem;  
-}
-
-.gradient-strip {
-    position: fixed;  
+    width: calc(100vw / 3);
+  }
+  
+  .random-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .arrow-container {
+    font-size: 3rem;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+  }
+  
+  .gradient-strip {
+    position: fixed;
     top: 0;
-    left: 0;  
-    z-index: -1; 
-    width: 100vw;  
-    height: 100vh; 
-    background: linear-gradient(to right, white,  white,white, white, white,white, white, white, white, white, #D2D2D2, white, white, white, white, white, white, white, white, white, white); /* Horizontal gradient */
-}
-
-
-@media (max-width: 1000px) {
+    left: 0;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    mix-blend-mode: multiply;
+    background: linear-gradient(
+      to right,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      #d2d2d2,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent
+    ); /* Horizontal gradient */
+  }
+  
+  @media (max-width: 1000px) {
     .text-container {
-        font-size: 1.5rem; /* Adjusted font size for smaller screens */
+      font-size: 1.5rem; /* Adjusted font size for smaller screens */
+    }
+  }
+  
+  @media (max-width: 650px) {
+    .text-container {
+        font-size: 1.1rem; /* Adjusted font size for smaller screens */
+        width: 100%; /* Full width */
+        margin-top: 90%; /* Adjust margin to prevent overlap with image */
+    }
+
+    .random-image {
+        top: 0; /* Align to the top */
+        left: 0; /* Align to the left */
+        width: 100%; /* Full width */
+    }
+    .gradient-strip {
+        z-index: 2;
+        mix-blend-mode: multiply;
+    }
+
+    .gradient-strip {
+        background: 
+        linear-gradient(
+            to right,
+            #d2d2d2,
+            transparent,
+            transparent,
+            transparent
+        )
+          
+        
     }
 }
-
-@media (max-width: 700px) {
-    .text-container {
-        font-size: 1rem; /* Further adjusted font size for even smaller screens */
-    }
-}
+  
