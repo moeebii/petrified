@@ -1,0 +1,108 @@
+html {
+    margin: 0.5rem;
+  }
+  
+  .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .self-container {
+    font-family: "Arial Narrow", Arial, sans-serif;
+    font-size: 2rem;
+    width: calc(100vw / 3);
+  }
+  
+  .random-image {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    width: calc(100vw / 3);
+  }
+  
+  .random-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+
+  .gradient-strip {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    width: 100vw;
+    height: 100vh;
+    mix-blend-mode: multiply;
+    background: linear-gradient(
+      to right,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      #d2d2d2,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent,
+      transparent
+    );  
+  }
+  
+  @media (max-width: 1000px) {
+    .text-container {
+      font-size: 1.5rem;  
+    }
+  }
+  
+  @media (max-width: 650px) {
+    .text-container {
+display: none;
+    }
+
+    .arrow-container{
+      display: none;
+    }
+
+    .random-image {
+        top: 0;  
+        left: 0;  
+        width: 100%; 
+    }
+    .gradient-strip {
+        z-index: -2;
+        mix-blend-mode: multiply;
+    }
+
+    .random-image img {
+      width: 100%;
+      height: auto;
+    }
+
+    .gradient-strip {
+        background: 
+        linear-gradient(
+            to right,
+            #d2d2d2,
+            #d2d2d2,
+            transparent,
+            transparent,
+            transparent
+        )
+          
+        
+    }
+}
+  

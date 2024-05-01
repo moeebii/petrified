@@ -37,7 +37,7 @@ html {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: -2;
     width: 100vw;
     height: 100vh;
     mix-blend-mode: multiply;
@@ -86,20 +86,17 @@ html {
         width: 100%; 
     }
     .gradient-strip {
-        z-index: 2;
+        z-index: -2;
         mix-blend-mode: multiply;
     }
 
+    .random-image img {
+      width: 100%;
+      height: auto;
+    }
+
     .gradient-strip {
-        background: 
-        linear-gradient(
-            to right,
-            #d2d2d2,
-            #d2d2d2,
-            transparent,
-            transparent,
-            transparent
-        )
+        display: none;
           
         
     }
