@@ -64,26 +64,26 @@ html {
       transparent,
       transparent,
       transparent
-    ); /* Horizontal gradient */
+    );  
   }
   
   @media (max-width: 1000px) {
     .text-container {
-      font-size: 1.5rem; /* Adjusted font size for smaller screens */
+      font-size: 1.5rem;  
     }
   }
   
   @media (max-width: 650px) {
     .text-container {
-        font-size: 1.1rem; /* Adjusted font size for smaller screens */
-        width: 100%; /* Full width */
-        margin-top: 90%; /* Adjust margin to prevent overlap with image */
+        font-size: 1.1rem; 
+        width: 100%; 
+        margin-top: 90%;  
     }
 
     .random-image {
-        top: 0; /* Align to the top */
-        left: 0; /* Align to the left */
-        width: 100%; /* Full width */
+        top: 0;  
+        left: 0;  
+        width: 100%; 
     }
     .gradient-strip {
         z-index: 2;
@@ -94,6 +94,7 @@ html {
         background: 
         linear-gradient(
             to right,
+            #d2d2d2,
             #d2d2d2,
             transparent,
             transparent,
