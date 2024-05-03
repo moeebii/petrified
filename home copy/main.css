@@ -8,11 +8,10 @@ html {
     flex-direction: column;
   }
   
-  .self-container {
-    position: fixed;
+  .text-container {
+    font-family: "Arial Narrow", Arial, sans-serif;
+    font-size: 2rem;
     width: calc(100vw / 3);
-    top: 1rem;
-    left: 1rem;
   }
   
   .random-image {
@@ -27,7 +26,13 @@ html {
     height: auto;
   }
   
-
+  .arrow-container {
+    font-size: 3rem;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+  }
+  
   .gradient-strip {
     position: fixed;
     top: 0;
@@ -62,15 +67,17 @@ html {
     );  
   }
   
+  @media (max-width: 1000px) {
+    .text-container {
+      font-size: 1.5rem;  
+    }
+  }
   
   @media (max-width: 650px) {
-    .self-container {
-      width: calc(100vw / 3);
-      bottom: 0;
-    }
-
-    .arrow-container{
-      display: none;
+    .text-container {
+        font-size: 1.1rem; 
+        width: 100%; 
+        margin-top: 90%;  
     }
 
     .random-image {
@@ -89,15 +96,7 @@ html {
     }
 
     .gradient-strip {
-        background: 
-        linear-gradient(
-            to right,
-            #d2d2d2,
-            #d2d2d2,
-            transparent,
-            transparent,
-            transparent
-        )
+        display: none;
           
         
     }
