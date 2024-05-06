@@ -11,6 +11,10 @@
   left: 1rem;
 }
 
+#webcam{
+  width: 100%;
+}
+
 .random-image {
   position: fixed;
   top: 1rem;
