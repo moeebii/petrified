@@ -73,8 +73,6 @@
 
 #facesContainer canvas {
   margin: 10px;
-
-
 }
 
 input[type="file"]::-webkit-file-upload-button {
@@ -103,8 +101,12 @@ html {
   position: absolute;
   left: 0;
   top: 0;
+  width: 40vw;
 }
 
+#overlay, #inputVideo{
+  width: 100%;
+}
 .arrow-container a { color: inherit;
 text-decoration:none;  
 } 
